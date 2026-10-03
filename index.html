@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Krish Shah's personal portfolio: finance, computer science, investment research, and business development.">
+  <title>Krish Shah | Personal Portfolio</title>
+  <style>
+    :root { --ink:#142b3c; --muted:#506477; --paper:#f6f8fa; --accent:#146c67; --line:#dce5eb; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:90px; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; line-height:1.65; }
+    a { color:var(--accent); text-underline-offset:4px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+    .wrap { max-width:1100px; margin:auto; padding:0 28px; }
+    .skip { position:absolute; left:16px; top:-80px; padding:10px; background:white; z-index:10; }
+    .skip:focus { top:10px; }
+    header { background:rgba(255,255,255,.97); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:2; }
+    nav { display:flex; align-items:center; justify-content:space-between; min-height:74px; gap:20px; }
+    .brand { color:var(--ink); font-weight:700; font-size:20px; text-decoration:none; }
+    .nav-links { display:flex; gap:24px; }
+    .nav-links a { color:var(--muted); text-decoration:none; font-size:14px; }
+    .nav-links a:hover { color:var(--accent); }
+    .hero { padding:90px 0 78px; border-bottom:1px solid var(--line); }
+    .eyebrow { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
+    h1 { font-size:clamp(44px,8vw,78px); line-height:1.1; letter-spacing:-3px; margin:20px 0; }
+    .intro { font-size:clamp(19px,3vw,24px); max-width:790px; color:var(--muted); margin:0 0 30px; }
+    .button { display:inline-block; border-radius:6px; background:var(--accent); color:white; padding:11px 20px; text-decoration:none; font-weight:700; font-size:14px; }
+    .hero-links { display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+    .education { margin-top:35px; font-size:14px; color:var(--muted); }
+    section { padding:64px 0; }
+    h2 { font-size:30px; letter-spacing:-.8px; margin:6px 0 12px; line-height:1.25; }
+    .section-intro { color:var(--muted); max-width:700px; margin:0 0 28px; }
+    .skill-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .skill-box { background:white; border:1px solid var(--line); padding:25px; border-radius:10px; }
+    h3 { font-size:19px; line-height:1.4; margin:0 0 14px; }
+    ul { padding-left:20px; margin:0; color:var(--muted); }
+    li { margin:7px 0; }
+    #projects { background:#eaf0f4; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .project-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .project { background:white; border:1px solid var(--line); border-radius:10px; padding:27px; display:flex; flex-direction:column; }
+    .project-number { color:var(--accent); font-size:12px; letter-spacing:2px; font-weight:700; margin-bottom:20px; }
+    .project p { color:var(--muted); font-size:15px; margin:0 0 18px; }
+    .project .reference { border-top:1px solid var(--line); padding-top:17px; margin-top:auto; font-size:13px; }
+    .reference strong { color:var(--ink); }
+    details { margin-bottom:22px; font-size:14px; color:var(--muted); }
+    summary { cursor:pointer; color:var(--accent); font-weight:700; }
+    details ul { margin-top:12px; }
+    .contact { display:flex; justify-content:space-between; align-items:center; gap:30px; flex-wrap:wrap; }
+    .contact-links { display:flex; gap:24px; flex-wrap:wrap; }
+    footer { border-top:1px solid var(--line); padding:24px 0; color:var(--muted); font-size:13px; }
+    @media(max-width:820px) { .project-grid { grid-template-columns:1fr; } .skill-grid { grid-template-columns:1fr; } .hero { padding:60px 0; } section { padding:45px 0; } }
+    @media(max-width:480px) { .wrap { padding:0 20px; } nav { flex-wrap:wrap; padding:14px 0; gap:8px; } .nav-links { gap:20px; } h1 { letter-spacing:-2px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#about">Krish Shah</a>
+      <div class="nav-links"><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="about" aria-labelledby="name">
+      <div class="wrap">
+        <div class="eyebrow">Rutgers Business School · Class of 2029</div>
+        <h1 id="name">Krish Shah</h1>
+        <p class="intro">I am a Finance and Computer Science student at Rutgers Business School with experience in financial analysis, investment research, and business development.</p>
+        <div class="hero-links"><a class="button" href="#projects">Explore my projects</a><a href="https://www.linkedin.com/in/krish-shah2">Connect on LinkedIn</a></div>
+        <p class="education">B.S. in Finance &amp; Computer Science · Expected May 2029 · GPA: 4.0/4.0</p>
+      </div>
+    </section>
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="wrap">
+        <div class="eyebrow">What I bring</div>
+        <h2 id="skills-heading">Skills</h2>
+        <p class="section-intro">A foundation in finance and technology, supported by hands-on work experience and campus leadership.</p>
+        <div class="skill-grid">
+          <article class="skill-box"><h3>Finance &amp; Research</h3><ul><li>Financial analysis</li><li>Cash flow projections</li><li>Startup research and due diligence</li><li>Deal sourcing</li></ul></article>
+          <article class="skill-box"><h3>Technical Tools</h3><ul><li>Microsoft Office Suite</li><li>SQL — basic proficiency</li><li>Java — basic proficiency</li><li>Python — basic proficiency</li></ul></article>
+          <article class="skill-box"><h3>Leadership &amp; Communication</h3><ul><li>Event planning and coordination</li><li>Team collaboration</li><li>Budget and resource management</li><li>Gujarati — native proficiency</li></ul></article>
+        </div>
+      </div>
+    </section>
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="wrap">
+        <div class="eyebrow">Selected work</div>
+        <h2 id="projects-heading">Projects</h2>
+        <p class="section-intro">Three projects completed through my internship and externship experiences.</p>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-number">01 / BUSINESS DEVELOPMENT</div>
+            <h3>Automated Partner Sourcing</h3>
+            <p>Helped build an automated sourcing framework that identified over 1,000 prospective strategic partners weekly to support client acquisition and market expansion.</p>
+            <details><summary>Read project details</summary><ul><li>Co-developed a framework for identifying potential business partners.</li><li>Supported the firm's business development efforts by building a recurring pipeline of prospects.</li></ul></details>
+            <p class="reference"><strong>Rise and Shine USA LLC</strong><br>Finance &amp; Business Development Intern<br>May–July 2026</p>
+          </article>
+          <article class="project">
+            <div class="project-number">02 / INVESTMENT RESEARCH</div>
+            <h3>Startup Research &amp; Due Diligence</h3>
+            <p>Identified and evaluated 20+ early-stage startups aligned with Mangusta Capital's investment thesis and conducted due diligence on three target ventures.</p>
+            <details><summary>Read project details</summary><ul><li>Evaluated product-market fit and scalability to qualify potential investments.</li><li>Analyzed financial performance, competitive advantages, and management capabilities to support investment decisions.</li></ul></details>
+            <p class="reference"><strong>Mangusta Capital</strong><br>Deal Sourcing &amp; Analysis Extern<br>December 2025–February 2026</p>
+          </article>
+          <article class="project">
+            <div class="project-number">03 / FINANCIAL PLANNING</div>
+            <h3>Cash Flow Projections &amp; Business Plans</h3>
+            <p>Built 10+ cash flow projections and developed customized business plans tailored to client objectives across four insurance business sectors.</p>
+            <details><summary>Read project details</summary><ul><li>Created projections to support financial planning and growth strategies.</li><li>Also analyzed eight STR reports with the VP of Finance to interpret performance data and identify potential opportunities.</li></ul></details>
+            <p class="reference"><strong>Accurate Commercial Lending</strong><br>Finance Intern<br>July–September 2024</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap contact">
+        <div><div class="eyebrow">Let's connect</div><h2 id="contact-heading">Get in touch</h2><p class="section-intro">Interested in opportunities in finance, investment banking, and technology.</p></div>
+        <div class="contact-links"><a href="mailto:KrxshShah@gmail.com">Email me</a><a href="https://www.linkedin.com/in/krish-shah2">LinkedIn</a><a href="https://github.com/KrxshShah/KrxshShah.github.io">Portfolio repository</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Krish Shah · Personal Portfolio</div></footer>
+</body>
+</html>
